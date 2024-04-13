@@ -1,12 +1,16 @@
+
 .card-wrapper {
     margin: 5% 0;
+    /* margin-right: 50px; */
   }
-  
-/* You can adjust the image size by increasing/decreasing the width, height */
-.custom-circle-image {
-  width: 10vw; /* note i used vw not px for better responsive */
-  height: 10vw;
+
+
+.racer-image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
 }
+
 
 .custom-circle-image img {
   object-fit: cover;
@@ -14,6 +18,8 @@
 
 .card-title {
   letter-spacing: 1.1px;
+  font-size: 15px;
+  display: inline-block; 
 }
 
 .card-text {

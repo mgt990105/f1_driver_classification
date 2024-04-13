@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
     load_saved_artifacts()
 
-    print(classify_image(None, 'test_images/alex_albon_test_1.jpg'))
+    # print(classify_image(None, 'test_images/alex_albon_test_1.jpg'))
     # print(classify_image(None, 'test_images/max_verstappen_test_1.jpg'))
     # print(classify_image(None, 'test_images/two_people_1.jpg'))
 
