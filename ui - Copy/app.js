@@ -18,8 +18,8 @@ function init() {
     dz.on("complete", function (file) {
         let imageData = file.dataURL;
         
-        // var url = "http://127.0.0.1:5000/classify_image";
-        var url = "/api/classify_image"
+        var url = "http://127.0.0.1:5000/classify_image";
+        // var url = "/api/classify_image"
 
         $.post(url, {
             image_data: file.dataURL
@@ -51,6 +51,14 @@ function init() {
                 $("#resultHolder").show();
                 $("#divClassTable").show();
                 $("#resultHolder").html($(`[data-player="${match.class}"`).html());
+
+                let capitalizeEachWord = (string) => {
+                    return string.replace(/\b\w/g, (char) => char.toUpperCase());
+                  };
+
+                let resultText = `You resemble ${capitalizeEachWord(match.class)}! There's a ${bestScore}% chance you could be mistaken for him on the track! ;)`;
+                $("#resultHolder").append(`<div class="result__text" id="resultText">${resultText}</div>`);
+
                 let classDictionary = match.class_dictionary;
                 for(let personName in classDictionary) {
                     let index = classDictionary[personName];
