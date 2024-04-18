@@ -136,8 +136,24 @@ body {
 
 .note {
   color: #555555; /* Dark gray text color */
-  font-size: 14px;
+  font-size: 20px;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
+
+.wait__message {
+  color: #555555; /* Dark gray text color */
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
 
 /* Submit button */
 #submitBtn {
@@ -170,7 +186,7 @@ body {
   border-radius: 8px;
   color: #cc0000; /* Red text color */
   font-size: 16px;
-  margin-top: 200px;
+  margin-top: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-right: 600px;
   width: 350px;
@@ -210,6 +226,8 @@ body {
 #resultHolder .player-name {
   color: #ffffff;
 }
+
+
 
 
 
@@ -257,6 +275,7 @@ body {
   font-family: "Sedan", serif;
   font-weight: 400;
   font-style: normal;
+  width: 500px;
 }
 
 .social__media {
@@ -349,9 +368,19 @@ body {
     font-style: normal;
   }
 
+  .wait__message {
+    color: #555555; /* Dark gray text color */
+    margin-top: 40px;
+    font-size: 15px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
   #submitBtn {
     width: 300px;
-    height: 45px;
+    height: 55px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -360,8 +389,10 @@ body {
 
 
   #submitBtn p {
-    font-size: 15px;
+    font-size: 22px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: 0; /* Optionally remove any default margins */
   }
 
@@ -371,9 +402,9 @@ body {
     background-color: #e6e6e6; /* Light gray background */
     border-radius: 8px;
     padding: 5px;
-    margin-left: 480px;
+    margin-left: 50px;
     margin-top: 70px;
-    margin-right: 520px;
+    /* margin-right: 520px; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
@@ -388,8 +419,8 @@ body {
     color: #cc0000; /* Red text color */
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
-    margin-left: 570px;
+    margin-top: 50px;
+    margin-left: 50px;
     width: 300px;
     align-items: center;
     justify-content: center;
@@ -409,25 +440,27 @@ body {
   }
 
   .about-us-links {
+    margin-top: 15px;
     display: flex;        /* Use flexbox */
     align-items: center;  /* Align items vertically */
     justify-content: center; /* Center content horizontally */
   }
 
   .creator-image {
-    width: 150px;         /* Set the width of the image */
+    width: 170px;         /* Set the width of the image */
     height: auto;         /* Maintain aspect ratio */
-    margin-right: 20px;   /* Add some space between the image and text */
+    margin-right: 20px;
+    margin-top: 20px;   /* Add some space between the image and text */
   }
   
   .about-us-links p {
-    margin-top: 40px;
+    margin-top: 50px;
     font-family: "Sedan", serif;
     font-weight: 400;
     font-style: normal;
     margin-top: 0;        /* Remove default margin */
     margin-bottom: 0;     /* Remove default margin */
-    width: 300px;
+    width: 400px;
   }
   
   .social__media {
